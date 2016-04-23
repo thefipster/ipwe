@@ -3,5 +3,6 @@
 
 ## How to use it
 
+```c#
 IpweDevice ipwe = new IpweDevice("192.168.1.20");
 List<IpweSensor> data = ipwe.GetSensors();
