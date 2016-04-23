@@ -18,6 +18,11 @@ namespace Toc.Elv.IpweOne
                 ip = string.Concat(ip, "/ipwe.cgi");
             }
 
+            if (!ip.Contains("http"))
+            {
+                ip = string.Concat("http://", ip);
+            }
+
             ipAddress = ip;
         }
 
